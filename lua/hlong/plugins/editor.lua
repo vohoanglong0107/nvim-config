@@ -23,6 +23,7 @@ local treesitter_parsers = {
 	"starlark",
 	"terraform",
 	"tsx",
+	"toml",
 	"typescript",
 	"vim",
 	"vimdoc",
