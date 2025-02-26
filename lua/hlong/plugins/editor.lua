@@ -1,5 +1,34 @@
 --- Plugins involve text manipulation
 
+local treesitter_parsers = {
+	"bash",
+	"c",
+	"cpp",
+	"css",
+	"dockerfile",
+	"go",
+	"hcl",
+	"html",
+	"java",
+	"javascript",
+	"json",
+	"jsonc",
+	"lua",
+	"markdown",
+	"markdown_inline",
+	"python",
+	"regex",
+	"ruby",
+	"rust",
+	"starlark",
+	"terraform",
+	"tsx",
+	"typescript",
+	"vim",
+	"vimdoc",
+	"yaml",
+}
+
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -16,7 +45,7 @@ return {
 			vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 
 			require("nvim-treesitter.configs").setup({
-				ensure_installed = parsers,
+				ensure_installed = treesitter_parsers,
 				playground = {
 					enable = true,
 				},
