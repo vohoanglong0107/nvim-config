@@ -12,7 +12,7 @@ lspconfig.pyright.setup({
 	capabilities = base.capabilities,
 })
 
-lspconfig.ruff_lsp.setup({
+lspconfig.ruff.setup({
 	on_attach = function(client, _)
 		client.server_capabilities.hoverProvider = false
 	end,
