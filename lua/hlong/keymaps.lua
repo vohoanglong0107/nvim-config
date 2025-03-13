@@ -403,7 +403,7 @@ local function lsp_keymaps(buffer)
 			modes = { "n" },
 			lhs = "gr",
 			rhs = function()
-				require("trouble").open({ mode = "lsp_references", focus = true })
+				require("trouble").open({ mode = "lsp_references", focus = true, auto_refresh = false })
 			end,
 			desc = "Go to references",
 			opts = { buffer = buffer },
