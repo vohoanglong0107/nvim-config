@@ -425,7 +425,7 @@ local function lsp_keymaps(buffer)
 			opts = { buffer = buffer },
 		},
 		{
-			modes = { "n" },
+			modes = { "n", "v" },
 			lhs = "<leader>la",
 			rhs = vim.lsp.buf.code_action,
 			desc = "Show code actions",
